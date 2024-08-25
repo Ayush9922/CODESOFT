@@ -32,7 +32,7 @@ void markTaskCompleted(std::vector<Task>& tasks) {
     int taskNumber;
     std::cout << "Enter the task number to mark as completed: ";
     std::cin >> taskNumber;
-    std::cin.ignore(); // to ignore the newline character
+    std::cin.ignore(); 
 
     if (taskNumber > 0 && taskNumber <= tasks.size()) {
         tasks[taskNumber - 1].completed = true;
@@ -46,7 +46,7 @@ void removeTask(std::vector<Task>& tasks) {
     int taskNumber;
     std::cout << "Enter the task number to remove: ";
     std::cin >> taskNumber;
-    std::cin.ignore(); // to ignore the newline character
+    std::cin.ignore(); 
 
     if (taskNumber > 0 && taskNumber <= tasks.size()) {
         tasks.erase(tasks.begin() + taskNumber - 1);
@@ -69,7 +69,7 @@ int main() {
         std::cout << "5. Exit\n";
         std::cout << "Enter your choice: ";
         std::cin >> choice;
-        std::cin.ignore(); // to ignore the newline character
+        std::cin.ignore(); 
 
         switch (choice) {
             case 1:
